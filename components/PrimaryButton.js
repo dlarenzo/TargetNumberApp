@@ -4,7 +4,6 @@ function PrimaryButton({ children }) {
   return (
     <View>
       <Text>{children}</Text>
-      blah
     </View>
   );
 }
