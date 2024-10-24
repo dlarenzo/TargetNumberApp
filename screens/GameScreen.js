@@ -33,7 +33,7 @@ function GameScreen({ userNumber, onGameOver }) {
   // useEffect is used to check if current guess is equal to the user number
   useEffect(() => {
     if (currentGuess === userNumber) {
-      onGameOver();
+      onGameOver(guessRounds.length);
     }
   }, [currentGuess, userNumber, onGameOver]);
 
