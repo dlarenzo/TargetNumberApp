@@ -1,16 +1,11 @@
 // import UseState to manage conditions
-import { useState } from "react";
-
-import { TextInput, View, StyleSheet, Alert, Text } from "react-native";
-
-import Card from "../components/ui/Card";
-
-import Colors from "../constants/colors";
-
-// import components
-import PrimaryButton from "../components/ui/PrimaryButton";
+import React, { useState } from "react";
+import { View, TextInput, StyleSheet } from "react-native";
 import Title from "../components/ui/Title";
+import Card from "../components/ui/Card";
 import InstructionText from "../components/ui/InstructionText";
+import PrimaryButton from "../components/ui/PrimaryButton";
+import Colors from "../constants/colors";
 
 function StartGameScreen({ onPickNumber }) {
   // create a state to manage the number input
@@ -80,7 +75,6 @@ const styles = StyleSheet.create({
     marginTop: 100,
     alignItems: "center",
   },
-
   numberInput: {
     height: 50,
     width: 75,
